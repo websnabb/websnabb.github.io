@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Luna Landing your perfect landing page",
-    "description": "Landing page template",
+    "title": "Web Agency with a Twist",
+    "description": "Hosting and building websites for small businesses with evolving templates",
     "lang": "en",
     "charset": "UTF-8",
     "ldJson": {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "name": "Luna Landing",
-      "description": "Fictitious company that seeks to elevate and simplify the lives of web developers.",
-      "url": "https://luna-landing-rust.vercel.app/",
+      "name": "WebSnabb",
+      "description": "Web Agency that hosts and builds static websites for small businesses that keeps on updating.",
+      "url": "https://websnabb.github.io",
       "logo": "./public/favicon.svg",
       "contactPoint": {
         "@type": "ContactPoint",
-        "email": "luna-landing@luna.com",
+        "email": "websnabb@gmail.com",
         "contactType": "Client Service"
       },
       "sameAs": [
@@ -24,21 +24,21 @@
     }
   },
   "headerData": {
-    "logo": "Luna Landing",
+    "logo": "WebSnabb",
     "links": [
-      { "label": "About", "href": "#" },
       { "label": "Services", "href": "#" },
       { "label": "Prices", "href": "#" },
       { "label": "FAQs", "href": "#" },
-      { "label": "Blog", "href": "#" }
+      { "label": "Blog", "href": "#" },
+      { "label": "About", "href": "#" }
     ]
   },
   "heroData": {
-    "title": "Open Your Mind to the Universe: Welcome to",
-    "subTitle": "Discover the Beauty of the Cosmos: Explore the Infinite Wonders of Space with Us",
-    "primaryCta": "Github Repo",
-    "secondaryCta": "See our pricing",
-    "highlightedTitle": "Luna Landing"
+    "title": "We build, host and update websites for small businesses.",
+    "subTitle": "Leveraging the template available that is suitable for each business without extra cost.",
+    "primaryCta": "Book a Meeting",
+    "secondaryCta": "See Pricing",
+    "highlightedTitle": "websites for small businesses"
   },
   "servicesData": {
     "title": "Everything you need to build a website",
@@ -49,7 +49,7 @@
         "description": "Our templates are crafted by experienced web designers, ensuring a modern and polished look for your site. From typography to element design, every detail is carefully considered to convey a professional image."
       },
       {
-        "title": "Integrated Accessibility",
+        "title": "Web Hosting",
         "icon": "PlanetIcon",
         "description": "We care about web accessibility and have integrated features to ensure your site is accessible to all users, including those with visual or motor disabilities. Our templates comply with WCAG accessibility standards to provide an inclusive experience for everyone."
       },
@@ -59,7 +59,7 @@
         "description": "We understand the importance of your site being visible in search engines. That's why our templates are optimized for SEO, meaning they are structured and coded to be easily indexed by Google and other search engines, helping to improve your ranking in search results."
       },
       {
-        "title": "Easy Set up",
+        "title": "Domain Name",
         "icon": "ConfigIcon",
         "description": "With our templates, you don't need to be a web development expert to have an impressive site. They are easy to set up and customize, with intuitive options that allow you to change colors, fonts, page layout, and more with just a few clicks. Make your site stand out hassle-free!"
       }
