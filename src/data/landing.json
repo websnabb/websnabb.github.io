@@ -26,11 +26,11 @@
   "headerData": {
     "logo": "WebSnabb",
     "links": [
-      { "label": "Services", "href": "#" },
-      { "label": "Prices", "href": "#" },
-      { "label": "FAQs", "href": "#" },
-      { "label": "Blog", "href": "#" },
-      { "label": "About", "href": "#" }
+      { "label": "Services", "href": "services-section" },
+      { "label": "Prices", "href": "price-section" },
+      { "label": "FAQs", "href": "faqs" },
+      { "label": "Blog", "href": "blog" },
+      { "label": "About", "href": "about" }
     ]
   },
   "heroData": {
