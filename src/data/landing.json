@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Web Agency with a Twist",
-    "description": "Hosting and building websites for small businesses with evolving templates",
+    "description": "Website development for small businesses with a twist",
     "lang": "en",
     "charset": "UTF-8",
     "ldJson": {
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "WebSnabb",
-      "description": "Web Agency that hosts and builds static websites for small businesses that keeps on updating.",
+      "description": "Web Agency that host and build websites for small businesses that keeps on updating.",
       "url": "https://websnabb.github.io",
       "logo": "./public/favicon.svg",
       "contactPoint": {
@@ -34,11 +34,11 @@
     ]
   },
   "heroData": {
-    "title": "We build, host and update websites for small businesses.",
-    "subTitle": "Leveraging the template available that is suitable for each business without extra cost.",
+    "title": "We build, host and update",
+    "subTitle": "Leveraging the templates available that is suitable for each business without extra cost.",
     "primaryCta": "Book a Meeting",
     "secondaryCta": "See Pricing",
-    "highlightedTitle": "websites for small businesses"
+    "highlightedTitle": "websites for small businesses."
   },
   "servicesData": {
     "title": "Everything you need to build a website",
