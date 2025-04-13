@@ -29,44 +29,44 @@
       { "label": "Services", "href": "#services-section" },
       { "label": "Prices", "href": "#price-section" },
       { "label": "FAQs", "href": "#faqs" },
-      { "label": "Blog", "href": "#blog" },
+      { "label": "Blog", "href": "blog" },
       { "label": "About", "href": "#about" }
     ]
   },
   "heroData": {
-    "title": "We build, host and update",
-    "subTitle": "Leveraging the templates available that is suitable for each business without extra cost.",
+    "title": "We help small and medium size bussinesses in",
+    "subTitle": "Leveraging the templates available that is suitable for each businesses without the extra cost.",
     "primaryCta": "Book a Meeting",
     "secondaryCta": "See Pricing",
-    "highlightedTitle": "websites for small businesses."
+    "highlightedTitle": "creating websites."
   },
   "servicesData": {
-    "title": "Everything you need to build a website",
+    "title": "Everything you need to have a website",
     "services": [
       {
         "title": "Professional Templates",
         "icon": "DevIcon",
-        "description": "Our templates are crafted by experienced web designers, ensuring a modern and polished look for your site. From typography to element design, every detail is carefully considered to convey a professional image."
+        "description": "We look for well crafted templates, ensuring a modern and polished look for your site."
       },
       {
         "title": "Web Hosting",
         "icon": "PlanetIcon",
-        "description": "We care about web accessibility and have integrated features to ensure your site is accessible to all users, including those with visual or motor disabilities. Our templates comply with WCAG accessibility standards to provide an inclusive experience for everyone."
+        "description": "We care about web accessibility and have integrated features to ensure your site is accessible to all users."
       },
       {
         "title": "SEO-Optimized",
         "icon": "FileIcon",
-        "description": "We understand the importance of your site being visible in search engines. That's why our templates are optimized for SEO, meaning they are structured and coded to be easily indexed by Google and other search engines, helping to improve your ranking in search results."
+        "description": "We understand the importance of your site being visible in search engines. That's why update your website to be optimized for SEO, meaning they are structured and coded to be easily indexed by Google and other search engines, helping to improve your ranking in search results."
       },
       {
-        "title": "Domain Name",
+        "title": "Domain Name Support",
         "icon": "ConfigIcon",
-        "description": "With our templates, you don't need to be a web development expert to have an impressive site. They are easy to set up and customize, with intuitive options that allow you to change colors, fonts, page layout, and more with just a few clicks. Make your site stand out hassle-free!"
+        "description": "Domain name is your business' identity. If you don't have a domain name yet, we can assist you on getting one."
       }
     ]
   },
   "adventajesData": {
-    "title": "    Unlock the Power of Luna Landing: Discover the Key Benefits",
+    "title": "    Subscribe and Discover the Key Benefits",
     "adventajes": [
       {
         "title": "Take Your Website to Perfection",
@@ -116,69 +116,52 @@
     "title": "Our Pricing",
     "tiers": [
       {
-        "title": "Starter",
-        "description": "Best option for personal use & for your next project.",
+        "title": "Basic",
+        "description": "Best option for simple, static websites.",
         "price": {
-          "amount": "Free"
-        },
-        "features": [
-          "feature 1",
-          "feature 2",
-          "feature 3",
-          "feature 4",
-          "feature 5"
-        ],
-        "cta": "Get started"
-      },
-      {
-        "title": "Professional",
-        "description": "Relevant for multiple users, extended & premium support.",
-        "price": {
-          "amount": "$29",
+          "amount": "15 EUR",
           "period": "/month"
         },
         "features": [
-          "feature 1",
-          "feature 2",
-          "feature 3",
-          "feature 4",
-          "feature 5"
+          "Maximum of 5 pages",
+          "Website Hosting",
+          "Website Development",
+          "Technical Support"
         ],
-        "cta": "Get started"
+        "cta": "Subscribe"
       },
       {
-        "title": "Enterprise",
-        "description": "Best for large scale uses and extended redistribution rights.",
+        "title": "Advance",
+        "description": "Best for businesses that wanted to include blogs/news.",
         "price": {
-          "amount": "$59",
+          "amount": "$24",
           "period": "/month"
         },
         "features": [
-          "feature 1",
-          "feature 2",
-          "feature 3",
-          "feature 4",
-          "feature 5"
+          "Maximum of 5 pages",
+          "Website Hosting",
+          "Website Development",
+          "Technical Support",
+          "Unlimited Blogs (One blog per request)"
         ],
-        "cta": "Get started"
+        "cta": "Subscribe"
       }
     ]
   },
   "footerData": {
-    "logo": "Luna Landing",
-    "description": "Discover the Beauty of the Cosmos: Explore the Infinite Wonders of Space with Us",
+    "logo": "WebSnabb",
+    "description": "Focus on Your Business: We'll Handle Your Website",
     "links": [
-      { "label": "About", "href": "/" },
-      { "label": "Services", "href": "/" },
-      { "label": "Blog", "href": "/" },
-      { "label": "FAQs", "href": "/" },
-      { "label": "Contact", "href": "/" }
+      { "label": "Services", "href": "#services-section" },
+      { "label": "Prices", "href": "#price-section" },
+      { "label": "FAQs", "href": "#faqs" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "About", "href": "/" }
     ],
     "socials": [
-      { "icon": "FacebookIcon", "href": "/" },
-      { "icon": "InstagramIcon", "href": "/" },
-      { "icon": "TwitterIcon", "href": "/" },
-      { "icon": "GithubIcon", "href": "/" }
+      { "icon": "FacebookIcon", "href": "facebook.com/websnabb" },
+      { "icon": "InstagramIcon", "href": "instagram.com/websnabb" },
+      { "icon": "TwitterIcon", "href": "x.com/websnabb"}
     ]
   }
 }
