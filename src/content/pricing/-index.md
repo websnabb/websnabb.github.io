@@ -5,46 +5,46 @@ draft: false
 plans:
 - title: Basic Plan
   subtitle: Best For Small Individuals
-  price: 15
+  price: 49
   type: month
   features:
     - Express Service
     - Customs Clearance
     - Time-Critical Services
   button:
-    label: Subscribe
+    label: Get started for free
     link: "/contact"
 
-- title: Business Plan
+- title: Professional Plan
   subtitle: Best For Professionals
-  price: 20
+  price: 69
   type: month
   recommended: true
   features:
-    - Website Development
-    - Hosting
-    - Website Maintenance
-    - One Post per Month
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+    - Cloud Service
+    - Best Dashboard
   button:
-    label: Subscribe
+    label: Get started
     link: "/contact"
 
-- title: Enterprise Plan
-  subtitle: Best for Enterprise Bussinesses
-  price: 30
+- title: Business Plan
+  subtitle: Best For Large Individuals
+  price: 99
   type: month
   features:
-    - Website Development
-    - Hosting
-    - Website Maintenance
-    - One Request at a Time
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
   button:
-    label: Book a Call
+    label: Get started
     link: "/contact"
 
 call_to_action:
-  title: You have other plans?
-  content: There might be other technical challenges you have that might be different on what we offer. Send us a message.
+  title: Need a larger plan?
+  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
   image: '/images/cta.png'
   button:
     enable: true
