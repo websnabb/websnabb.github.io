@@ -1,10 +1,6 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
-    },
-    {
       "name": "Blog",
       "url": "/blog"
     },
@@ -13,16 +9,8 @@
       "url": "/pricing"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
       "name": "FAQ",
       "url": "/faq"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
     }
   ],
   "footer": [
