@@ -4,7 +4,7 @@ description: "meta description"
 draft: false
 plans:
 - title: Basic Plan
-  subtitle: Best for simple, static websites.
+  subtitle: Best for simple websites.
   price: 15
   type: month
   features:
@@ -16,7 +16,7 @@ plans:
     link: "/contact"
 
 - title: Business Plan
-  subtitle: Best for bussinesses that writes blogs or news.
+  subtitle: Best for Websites with News.
   price: 20
   type: month
   recommended: true
@@ -24,7 +24,7 @@ plans:
     - Website Development
     - Hosting
     - Website Maintenance
-    - Unlimited News/Blogs (One post per month)
+    - One Blog/News per Month
   button:
     label: Subscribe
     link: "/contact"
@@ -37,7 +37,7 @@ plans:
     - Website Development
     - Hosting
     - Website Maintenance
-    - Unlimited Request (One request at a time)
+    - One request at a time
   button:
     label: Book a Call
     link: "/contact"
