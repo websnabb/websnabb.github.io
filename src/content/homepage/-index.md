@@ -5,8 +5,8 @@ banner:
   image: /images/banner-art.png
   button:
     enable: true
-    label: "Contact Us"
-    link: "/contact"
+    label: "See Plans"
+    link: "/pricing"
 
 # feature
 feature:
