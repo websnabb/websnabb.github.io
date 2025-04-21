@@ -1,6 +1,10 @@
 {
   "main": [
     {
+      "name": "Home",
+      "url": "/"
+    },
+    {
       "name": "Blog",
       "url": "/blog"
     },
@@ -15,6 +19,10 @@
     {
       "name": "FAQ",
       "url": "/faq"
+    },
+    {
+      "name": "Elements",
+      "url": "/elements"
     }
   ],
   "footer": [
