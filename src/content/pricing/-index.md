@@ -4,19 +4,19 @@ description: "meta description"
 draft: false
 plans:
 - title: Basic Plan
-  subtitle: Best for simple websites.
+  subtitle: Best For Small Individuals
   price: 15
   type: month
   features:
-    - Website Development
-    - Hosting
-    - Website Maintenance
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
   button:
     label: Subscribe
     link: "/contact"
 
 - title: Business Plan
-  subtitle: Best for Websites with News.
+  subtitle: Best For Professionals
   price: 20
   type: month
   recommended: true
@@ -30,7 +30,7 @@ plans:
     link: "/contact"
 
 - title: Enterprise Plan
-  subtitle: Best for businesses that are a bit complicated.
+  subtitle: Best for Enterprise Bussinesses
   price: 30
   type: month
   features:
