@@ -24,7 +24,7 @@ plans:
     - Website Development
     - Hosting
     - Website Maintenance
-    - One Blog/News per Month
+    - One Post per Month
   button:
     label: Subscribe
     link: "/contact"
@@ -37,7 +37,7 @@ plans:
     - Website Development
     - Hosting
     - Website Maintenance
-    - One request at a time
+    - One Request at a Time
   button:
     label: Book a Call
     link: "/contact"
