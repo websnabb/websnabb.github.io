@@ -6,8 +6,5 @@ import compress from 'astro-compress';
 export default defineConfig({
   site: 'https://websnabb.github.io',
   base: '/websnabb.github.io',
-  experimental: {
-    viewTransitions: true,
-  },
   integrations: [tailwind(), compress()],
 });
