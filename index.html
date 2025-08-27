@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebSnabb Agency</title>
-  <link href="dist/output.css" rel="stylesheet">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="script.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -12,9 +13,7 @@
   <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
       <h1 class="text-2xl font-bold">WebSnabb</h1>
-      <button id="menu-btn" class="md:hidden p-2 focus:outline-none">
-        ☰
-      </button>
+      <button id="menu-btn" class="md:hidden p-2 focus:outline-none">☰</button>
       <ul id="menu" class="hidden md:flex space-x-6 font-medium">
         <li><a href="#pricing" class="hover:text-blue-600">Pricing</a></li>
         <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
@@ -30,9 +29,7 @@
   <header class="text-center py-32">
     <h2 class="text-4xl md:text-6xl font-bold">Affordable Landing Pages</h2>
     <p class="text-lg text-gray-600 mt-4">Fast. Simple. Built for local businesses in Åland & EU.</p>
-    <a href="#pricing" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-      View Pricing
-    </a>
+    <a href="#pricing" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View Pricing</a>
   </header>
 
   <!-- Pricing -->
@@ -70,9 +67,7 @@
         <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg">
         <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg">
         <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-          Send
-        </button>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Send</button>
       </form>
     </div>
   </section>
