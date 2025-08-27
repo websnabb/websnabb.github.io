@@ -1,16 +1,14 @@
 {
-  "name": "websnabb.github.io",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "websnabb-landing",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.12",
-    "astro": "^5.13.4",
-    "tailwindcss": "^4.1.12"
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.10"
   }
 }
