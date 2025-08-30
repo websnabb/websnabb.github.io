@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-as-a-Service for Local Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+    <!-- Navigation Bar -->
+    <header class="py-6 px-4 md:px-8">
+        <nav class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold">
+                Local<span class="text-orange-500">Web.</span>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="#problem" class="text-sm font-medium hover:text-orange-500 transition-colors duration-300">Problem</a>
+                <a href="#solution" class="text-sm font-medium hover:text-orange-500 transition-colors duration-300">Solution</a>
+                <a href="#pricing" class="hidden md:inline-block text-sm font-medium hover:text-orange-500 transition-colors duration-300">Pricing</a>
+                <a href="#contact" class="px-4 py-2 text-sm font-semibold rounded-full bg-orange-500 text-white shadow-md hover:bg-orange-600 transition duration-300">
+                    Get Started
+                </a>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-300">
+                    <svg id="sun-icon" class="w-6 h-6 text-yellow-500 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg id="moon-icon" class="w-6 h-6 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-pattern py-16 md:py-24">
+            <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                    Your Business. Your Website. Made Simple.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8">
+                    We create and manage professional websites for local businesses on a simple, affordable subscription.
+                </p>
+                <a href="#contact" class="px-8 py-3 w-full md:w-auto text-lg font-semibold rounded-full bg-orange-500 text-white shadow-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105">
+                    Start Building Your Online Presence
+                </a>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Is This You?</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                        You know you need a website, but don't have the time or technical skills to build and maintain one. The cost of hiring an agency is too high, and free builders are complicated and lack a professional touch. Your online presence is non-existent, and you're missing out on new customers.
+                    </p>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://placehold.co/500x350/e5e7eb/4b5563?text=Confused+Business+Owner" alt="A small business owner looking confused at a computer screen." class="rounded-2xl shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="py-16 md:py-24 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center md:justify-start order-2 md:order-1">
+                    <img src="https://placehold.co/500x350/e5e7eb/4b5563?text=Website+Building+Solution" alt="A team of professionals working on a website." class="rounded-2xl shadow-xl max-w-full h-auto">
+                </div>
+                <div class="text-center md:text-left order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">We are the Solution.</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                        We provide beautiful, modern websites for your business without the headache. For a simple monthly subscription, we handle everything from design and hosting to maintenance and support, so you can focus on what you do best.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Us Section -->
+        <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Why Work With Us?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="p-8 rounded-2xl bg-white dark:bg-gray-900 shadow-lg border border-gray-200 dark:border-gray-700">
+                        <div class="inline-block p-3 rounded-full mb-4 bg-orange-100 dark:bg-orange-900">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15a3 3 0 10-6 0v2h6v-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Unbeatable Price</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Get a professional website for a fraction of the cost of a traditional agency.
+                        </p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="p-8 rounded-2xl bg-white dark:bg-gray-900 shadow-lg border border-gray-200 dark:border-gray-700">
+                        <div class="inline-block p-3 rounded-full mb-4 bg-orange-100 dark:bg-orange-900">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Lightning Fast</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Our process is streamlined to get your website up and running in days, not months.
+                        </p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="p-8 rounded-2xl bg-white dark:bg-gray-900 shadow-lg border border-gray-200 dark:border-gray-700">
+                        <div class="inline-block p-3 rounded-full mb-4 bg-orange-100 dark:bg-orange-900">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5m0-13.5a1.5 1.5 0 011.5-1.5h1.5a1.5 1.5 0 011.5 1.5v2.25c0 .193-.058.384-.166.541l-1.5 2.25a.75.75 0 00-.54.166l-2.25 1.5a.75.75 0 00-.166.54l-1.5-2.25a.75.75 0 00-.541-.166h-1.5a1.5 1.5 0 01-1.5-1.5V6.253a1.5 1.5 0 011.5-1.5z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">No-hassle Maintenance</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We handle all hosting, security, and updates, so you never have to worry about the technical stuff.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-16 md:py-24 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">How It Works</h2>
+                    <ol class="space-y-8 text-left max-w-md mx-auto md:mx-0">
+                        <li class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white font-bold">1</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Subscribe to a Tier</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Choose the plan that fits your business needs and fill out our simple questionnaire.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white font-bold">2</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">We Get to Work</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Our team builds your website based on your answers and sets up your hosting and domain.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white font-bold">3</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Go Live!</h3>
+                                <p class="text-gray-600 dark:text-gray-400">We'll handle the launch and provide ongoing maintenance and support for your new site.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex justify-center md:justify-end order-1 md:order-2">
+                    <img src="https://placehold.co/500x400/e5e7eb/4b5563?text=Simplified+Process" alt="A team working together to build a website, symbolizing collaboration and ease." class="rounded-2xl shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pricing</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Choose the plan that best fits your business needs. No hidden fees, just simple pricing.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Basic Tier -->
+                    <div class="p-8 rounded-2xl shadow-lg border-2 border-transparent bg-white dark:bg-gray-900">
+                        <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                        <p class="text-sm uppercase font-semibold text-orange-500 mb-4">Perfect for startups</p>
+                        <p class="text-4xl font-extrabold mb-6">$17.99<span class="text-base font-medium text-gray-500">/mo</span></p>
+                        <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300">
+                            Choose Plan
+                        </a>
+                        <ul class="mt-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Single-page website</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Basic contact form</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Hosted on GitHub Pages</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-400 dark:text-gray-600">
+                                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Analytics</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-400 dark:text-gray-600">
+                                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Monthly content updates</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="relative p-8 rounded-2xl shadow-lg border-2 border-orange-500 bg-white dark:bg-gray-900 transform scale-105">
+                        <span class="absolute top-0 right-0 -mt-3 -mr-3 px-3 py-1 text-xs font-bold rounded-full bg-orange-500 text-white">Popular</span>
+                        <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                        <p class="text-sm uppercase font-semibold text-orange-500 mb-4">Our most popular plan</p>
+                        <p class="text-4xl font-extrabold mb-6">$34.99<span class="text-base font-medium text-gray-500">/mo</span></p>
+                        <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300">
+                            Choose Plan
+                        </a>
+                        <ul class="mt-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Multi-page website (up to 5 pages)</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Advanced forms & analytics</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Hosted on GitHub Pages</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Quarterly content updates</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-gray-400 dark:text-gray-600">
+                                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <span>E-commerce integration</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Enterprise Tier -->
+                    <div class="p-8 rounded-2xl shadow-lg border-2 border-transparent bg-white dark:bg-gray-900">
+                        <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                        <p class="text-sm uppercase font-semibold text-orange-500 mb-4">For growing businesses</p>
+                        <p class="text-4xl font-extrabold mb-6">$59.99<span class="text-base font-medium text-gray-500">/mo</span></p>
+                        <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300">
+                            Choose Plan
+                        </a>
+                        <ul class="mt-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Unlimited pages</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Advanced forms & analytics</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Hosted on GitHub Pages</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Bi-monthly content updates</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                <span>E-commerce integration</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Carousel Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">What Our Customers Say</h2>
+                <div id="testimonial-carousel" class="relative overflow-hidden w-full max-w-2xl mx-auto">
+                    <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Testimonial 1 -->
+                        <div class="flex-shrink-0 w-full p-8">
+                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+                                <p class="text-gray-600 dark:text-gray-400 italic mb-4">
+                                    "I never thought a professional website could be so easy and affordable. The team at LocalWeb got me online in just a few days, and it looks amazing!"
+                                </p>
+                                <div class="flex items-center justify-center">
+                                    <img src="https://placehold.co/48x48/d1d5db/4b5563?text=B" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
+                                    <div>
+                                        <h4 class="font-semibold">Bob's Burgers</h4>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Owner, Local Restaurant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="flex-shrink-0 w-full p-8">
+                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+                                <p class="text-gray-600 dark:text-gray-400 italic mb-4">
+                                    "This service is a lifesaver. We had no online presence before, and now we're getting new clients from our professional-looking website. Highly recommend!"
+                                </p>
+                                <div class="flex items-center justify-center">
+                                    <img src="https://placehold.co/48x48/d1d5db/4b5563?text=J" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
+                                    <div>
+                                        <h4 class="font-semibold">Jane's Florist</h4>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Owner, Floral Shop</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button onclick="changeTestimonial(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="changeTestimonial(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300">
+                        <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                <div id="faqs" class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 cursor-pointer" onclick="toggleAccordion('faq1')">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How do you manage domain names?</h3>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" id="faq1-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <div id="faq1-content" class="accordion-content">
+                            <p class="mt-4 text-gray-600 dark:text-gray-400">You will register your domain name with a provider of your choice. We will then provide you with the necessary DNS settings to point your domain to the GitHub repository where your website is hosted. This gives you full control of your domain while we handle the technical setup.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 cursor-pointer" onclick="toggleAccordion('faq2')">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">What is included in content updates?</h3>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" id="faq2-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <div id="faq2-content" class="accordion-content">
+                            <p class="mt-4 text-gray-600 dark:text-gray-400">Content updates include changes to text, images, and other static content on your website. This is perfect for updating business hours, a new service, or adding a blog post. The number of updates per month varies by tier.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 cursor-pointer" onclick="toggleAccordion('faq3')">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Why use GitHub for hosting?</h3>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" id="faq3-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <div id="faq3-content" class="accordion-content">
+                            <p class="mt-4 text-gray-600 dark:text-gray-400">GitHub Pages provides a secure and free way to host static websites, offering exceptional speed and reliability. It also ensures your website is always up-to-date with the latest version of the code, which we manage for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="contact" class="bg-orange-500 text-white py-16 md:py-24 rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-4 md:px-8 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
+                <p class="text-lg md:text-xl text-orange-100 mb-8">
+                    Let's build your online presence today.
+                </p>
+                <a href="mailto:info@localweb.com" class="px-8 py-4 w-full md:w-auto text-lg font-bold rounded-full bg-white text-orange-500 shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black dark:bg-gray-800 text-gray-400 py-8 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm">&copy; 2024 LocalWeb. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Functionality -->
+     <script src="script.js"></script>
+</body>
+</html>

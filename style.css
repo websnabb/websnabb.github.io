@@ -1,0 +1,32 @@
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+    @apply bg-white text-black;
+}
+
+.dark {
+    @apply bg-gray-900 text-gray-200;
+}
+
+.dark .bg-pattern {
+    background-image: linear-gradient(to bottom, #1f2937, #111827);
+}
+
+.bg-pattern {
+    background-image: linear-gradient(to bottom, #f9fafb, #ffffff);
+    transition: background-image 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
