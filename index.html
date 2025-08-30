@@ -6,20 +6,38 @@
     <title>Web-as-a-Service for Local Businesses</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.open {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .nav-scrolled {
+            background-color: rgba(243, 244, 246, 0.95); /* Light background */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
 </head>
 <body class="bg-white text-gray-900">
 
     <!-- Navigation Bar -->
-    <header class="py-6 px-4 md:px-8 bg-white">
-        <nav class="container mx-auto flex items-center justify-between">
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto flex items-center justify-between py-6 px-4 md:px-8">
             <a href="#" class="text-2xl font-bold">
-                Web<span class="text-orange-500">S</span>nabb.
+                Local<span class="text-orange-600">Web.</span>
             </a>
             <div class="flex items-center space-x-4">
-                <a href="#problem" class="text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors duration-300">Problem</a>
-                <a href="#solution" class="text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors duration-300">Solution</a>
-                <a href="#pricing" class="hidden md:inline-block text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors duration-300">Pricing</a>
+                <a href="#problem" class="text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors duration-300">Problem</a>
+                <a href="#solution" class="text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors duration-300">Solution</a>
+                <a href="#pricing" class="hidden md:inline-block text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors duration-300">Pricing</a>
                 <a href="#contact" class="px-4 py-2 text-sm font-semibold rounded-full bg-orange-500 text-white shadow-md hover:bg-orange-600 transition duration-300">
                     Get Started
                 </a>
@@ -29,10 +47,10 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="bg-gray-50 py-16 md:py-24">
-            <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
+        <section class="bg-gray-50 min-h-screen flex items-center justify-center py-24 px-4 md:px-8">
+            <div class="container mx-auto text-center max-w-4xl">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-                    Your Business. Your Website. Made Simple.
+                    Your Business. Your Website. <span class="text-orange-600">Made Simple.</span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-600 mb-8">
                     We create and manage professional websites for local businesses on a simple, affordable subscription.
@@ -44,25 +62,25 @@
         </section>
 
         <!-- Problem Section -->
-        <section id="problem" class="py-16 md:py-24 bg-gray-900">
+        <section id="problem" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-center md:text-left">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">The Outdated Website Trap</h2>
-                    <ul class="text-left text-lg text-gray-400 leading-relaxed space-y-4">
+                    <ul class="text-left text-lg text-gray-600 leading-relaxed space-y-4">
                         <li class="flex items-start space-x-3">
-                            <svg class="w-6 h-6 text-emerald-400 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <p><strong>Clunky Mobile Experience:</strong> Your site isn't responsive, making it frustrating to use on phones and tablets.</p>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <svg class="w-6 h-6 text-emerald-400 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <p><strong>Slow Loading Speeds:</strong> Customers leave before your content even appears, leading to lost business.</p>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <svg class="w-6 h-6 text-emerald-400 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <p><strong>Outdated Look and Feel:</strong> The design looks like it's from the early 2000s, undermining your professionalism.</p>
@@ -70,7 +88,7 @@
                     </ul>
                 </div>
                 <div class="flex justify-center md:justify-end">
-                    <img src="https://placehold.co/500x350/1f2937/d1d5db?text=Confused+Business+Owner" alt="A small business owner looking confused at a computer screen." class="rounded-2xl shadow-xl max-w-full h-auto">
+                    <img src="https://placehold.co/500x350/f9fafb/111827?text=Confused+Business+Owner" alt="A small business owner looking confused at a computer screen." class="rounded-2xl shadow-xl max-w-full h-auto">
                 </div>
             </div>
         </section>
@@ -79,7 +97,7 @@
         <section id="solution" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
                 <div class="flex justify-center md:justify-start order-2 md:order-1">
-                    <img src="https://placehold.co/500x350/e5e7eb/4b5563?text=Website+Building+Solution" alt="A team of professionals working on a website." class="rounded-2xl shadow-xl max-w-full h-auto">
+                    <img src="https://placehold.co/500x350/f9fafb/111827?text=Website+Building+Solution" alt="A team of professionals working on a website." class="rounded-2xl shadow-xl max-w-full h-auto">
                 </div>
                 <div class="text-center md:text-left order-1 md:order-2">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">We are the Solution.</h2>
@@ -96,9 +114,9 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-12">Why Work With Us?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Benefit 1 -->
-                    <div class="p-8 rounded-2xl bg-gray-50 shadow-lg border border-gray-200">
-                        <div class="inline-block p-3 rounded-full mb-4 bg-orange-100">
-                            <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="p-8 rounded-2xl bg-gray-50 shadow-lg border border-gray-200 hover:border-orange-500 transition-colors duration-300">
+                        <div class="inline-block p-3 rounded-full mb-4 bg-gray-200">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15a3 3 0 10-6 0v2h6v-2z" />
@@ -110,9 +128,9 @@
                         </p>
                     </div>
                     <!-- Benefit 2 -->
-                    <div class="p-8 rounded-2xl bg-gray-50 shadow-lg border border-gray-200">
-                        <div class="inline-block p-3 rounded-full mb-4 bg-orange-100">
-                            <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="p-8 rounded-2xl bg-gray-50 shadow-lg border border-gray-200 hover:border-orange-500 transition-colors duration-300">
+                        <div class="inline-block p-3 rounded-full mb-4 bg-gray-200">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
@@ -122,9 +140,9 @@
                         </p>
                     </div>
                     <!-- Benefit 3 -->
-                    <div class="p-8 rounded-2xl bg-gray-50 shadow-lg border border-gray-200">
-                        <div class="inline-block p-3 rounded-full mb-4 bg-orange-100">
-                            <svg class="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="p-8 rounded-2xl bg-gray-50 shadow-lg border border-gray-200 hover:border-orange-500 transition-colors duration-300">
+                        <div class="inline-block p-3 rounded-full mb-4 bg-gray-200">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5m0-13.5a1.5 1.5 0 011.5-1.5h1.5a1.5 1.5 0 011.5 1.5v2.25c0 .193-.058.384-.166.541l-1.5 2.25a.75.75 0 00-.54.166l-2.25 1.5a.75.75 0 00-.166.54l-1.5-2.25a.75.75 0 00-.541-.166h-1.5a1.5 1.5 0 01-1.5-1.5z" />
                             </svg>
                         </div>
@@ -167,7 +185,7 @@
                     </ol>
                 </div>
                 <div class="flex justify-center md:justify-end order-1 md:order-2">
-                    <img src="https://placehold.co/500x400/e5e7eb/4b5563?text=Simplified+Process" alt="A team working together to build a website, symbolizing collaboration and ease." class="rounded-2xl shadow-xl max-w-full h-auto">
+                    <img src="https://placehold.co/500x400/f9fafb/111827?text=Simplified+Process" alt="A team working together to build a website, symbolizing collaboration and ease." class="rounded-2xl shadow-xl max-w-full h-auto">
                 </div>
             </div>
         </section>
@@ -181,28 +199,28 @@
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Basic Tier -->
-                    <div class="p-8 rounded-2xl shadow-lg border-2 border-transparent bg-gray-50">
+                    <div class="p-8 rounded-2xl shadow-lg border-2 border-gray-200 bg-gray-50 hover:border-orange-500 transition-colors duration-300">
                         <h3 class="text-2xl font-bold mb-2">Basic</h3>
-                        <p class="text-sm uppercase font-semibold text-orange-500 mb-4">Perfect for startups</p>
+                        <p class="text-sm uppercase font-semibold text-orange-600 mb-4">Perfect for startups</p>
                         <p class="text-4xl font-extrabold mb-6">$17.99<span class="text-base font-medium text-gray-500">/mo</span></p>
                         <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300">
                             Choose Plan
                         </a>
                         <ul class="mt-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Single-page website</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Basic contact form</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Hosted on GitHub Pages</span>
@@ -225,32 +243,32 @@
                     <div class="relative p-8 rounded-2xl shadow-lg border-2 border-orange-500 bg-gray-50 transform scale-105">
                         <span class="absolute top-0 right-0 -mt-3 -mr-3 px-3 py-1 text-xs font-bold rounded-full bg-orange-500 text-white">Popular</span>
                         <h3 class="text-2xl font-bold mb-2">Pro</h3>
-                        <p class="text-sm uppercase font-semibold text-orange-500 mb-4">Our most popular plan</p>
+                        <p class="text-sm uppercase font-semibold text-orange-600 mb-4">Our most popular plan</p>
                         <p class="text-4xl font-extrabold mb-6">$34.99<span class="text-base font-medium text-gray-500">/mo</span></p>
                         <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300">
                             Choose Plan
                         </a>
                         <ul class="mt-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Multi-page website (up to 5 pages)</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Advanced forms & analytics</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Hosted on GitHub Pages</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Quarterly content updates</span>
@@ -264,40 +282,40 @@
                         </ul>
                     </div>
                     <!-- Enterprise Tier -->
-                    <div class="p-8 rounded-2xl shadow-lg border-2 border-transparent bg-gray-50">
+                    <div class="p-8 rounded-2xl shadow-lg border-2 border-gray-200 bg-gray-50 hover:border-orange-500 transition-colors duration-300">
                         <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
-                        <p class="text-sm uppercase font-semibold text-orange-500 mb-4">For growing businesses</p>
+                        <p class="text-sm uppercase font-semibold text-orange-600 mb-4">For growing businesses</p>
                         <p class="text-4xl font-extrabold mb-6">$59.99<span class="text-base font-medium text-gray-500">/mo</span></p>
                         <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300">
                             Choose Plan
                         </a>
                         <ul class="mt-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Unlimited pages</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Advanced forms & analytics</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Hosted on GitHub Pages</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Bi-monthly content updates</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>E-commerce integration</span>
@@ -317,13 +335,13 @@
                         <!-- Testimonial 1 -->
                         <div class="flex-shrink-0 w-full p-8">
                             <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-                                <p class="text-gray-600 italic mb-4">
+                                <p class="text-gray-700 italic mb-4">
                                     "I never thought a professional website could be so easy and affordable. The team at LocalWeb got me online in just a few days, and it looks amazing!"
                                 </p>
                                 <div class="flex items-center justify-center">
                                     <img src="https://placehold.co/48x48/d1d5db/4b5563?text=B" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h4 class="font-semibold">Bob's Burgers</h4>
+                                        <h4 class="font-semibold text-gray-900">Bob's Burgers</h4>
                                         <p class="text-sm text-gray-500">Owner, Local Restaurant</p>
                                     </div>
                                 </div>
@@ -332,13 +350,13 @@
                         <!-- Testimonial 2 -->
                         <div class="flex-shrink-0 w-full p-8">
                             <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-                                <p class="text-gray-600 italic mb-4">
+                                <p class="text-gray-700 italic mb-4">
                                     "This service is a lifesaver. We had no online presence before, and now we're getting new clients from our professional-looking website. Highly recommend!"
                                 </p>
                                 <div class="flex items-center justify-center">
                                     <img src="https://placehold.co/48x48/d1d5db/4b5563?text=J" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
                                     <div>
-                                        <h4 class="font-semibold">Jane's Florist</h4>
+                                        <h4 class="font-semibold text-gray-900">Jane's Florist</h4>
                                         <p class="text-sm text-gray-500">Owner, Floral Shop</p>
                                     </div>
                                 </div>
@@ -366,7 +384,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
                 <div id="faqs" class="space-y-4">
                     <!-- FAQ Item 1 -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer" onclick="toggleAccordion('faq1')">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer hover:border-orange-500 transition-colors duration-300" onclick="toggleAccordion('faq1')">
                         <div class="flex justify-between items-center">
                             <h3 class="text-lg font-semibold">How do you manage domain names?</h3>
                             <svg class="w-6 h-6 transform transition-transform duration-300" id="faq1-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -378,7 +396,7 @@
                         </div>
                     </div>
                     <!-- FAQ Item 2 -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer" onclick="toggleAccordion('faq2')">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer hover:border-orange-500 transition-colors duration-300" onclick="toggleAccordion('faq2')">
                         <div class="flex justify-between items-center">
                             <h3 class="text-lg font-semibold">What is included in content updates?</h3>
                             <svg class="w-6 h-6 transform transition-transform duration-300" id="faq2-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -390,7 +408,7 @@
                         </div>
                     </div>
                     <!-- FAQ Item 3 -->
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer" onclick="toggleAccordion('faq3')">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer hover:border-orange-500 transition-colors duration-300" onclick="toggleAccordion('faq3')">
                         <div class="flex justify-between items-center">
                             <h3 class="text-lg font-semibold">Why use GitHub for hosting?</h3>
                             <svg class="w-6 h-6 transform transition-transform duration-300" id="faq3-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -409,10 +427,10 @@
         <section id="contact" class="bg-orange-500 text-white py-16 md:py-24 rounded-t-3xl shadow-inner">
             <div class="container mx-auto px-4 md:px-8 text-center max-w-3xl">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
-                <p class="text-lg md:text-xl text-orange-100 mb-8">
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
                     Let's build your online presence today.
                 </p>
-                <a href="mailto:info@localweb.com" class="px-8 py-4 w-full md:w-auto text-lg font-bold rounded-full bg-white text-orange-500 shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                <a href="mailto:info@localweb.com" class="px-8 py-4 w-full md:w-auto text-lg font-bold rounded-full bg-gray-900 text-orange-500 shadow-xl hover:bg-gray-800 transition duration-300 transform hover:scale-105">
                     Contact Us
                 </a>
             </div>
@@ -421,17 +439,57 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 px-4 md:px-8">
+    <footer class="bg-gray-100 text-gray-600 py-8 px-4 md:px-8 border-t border-gray-200">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <p class="text-sm">&copy; 2024 LocalWeb. All rights reserved.</p>
             <div class="flex space-x-4 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-gray-900 transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-900 transition duration-300">Terms of Service</a>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript for Functionality -->
-    <script src="script.js"></script>
+    <script>
+        // Testimonial Carousel
+        const testimonialContainer = document.getElementById('testimonial-container');
+        let currentTestimonial = 0;
+
+        function changeTestimonial(direction) {
+            const testimonials = testimonialContainer.children;
+            currentTestimonial = (currentTestimonial + direction + testimonials.length) % testimonials.length;
+            testimonialContainer.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+        }
+
+        // FAQs Accordion
+        function toggleAccordion(id) {
+            const content = document.getElementById(`${id}-content`);
+            const icon = document.getElementById(`${id}-icon`);
+            content.classList.toggle('open');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Navbar on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
