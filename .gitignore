@@ -1,2 +1,5 @@
+# System Files
+.DS_Store
+
 # built dependencies or libraries
 node_modules/
