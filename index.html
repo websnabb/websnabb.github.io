@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-as-a-Service for Local Businesses</title>
+    <!-- SEO Meta Tags for Search Engines -->
+    <title>Web-as-a-Service for Local Businesses | WebSnabb.</title>
+    <meta name="description" content="WebSnabb provides professional, affordable web-as-a-service subscriptions for local businesses. Get a modern, maintained website without the hassle.">
+    <meta name="keywords" content="local business website, web design service, website subscription, web-as-a-service, small business website, professional web design, affordable website design">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:title" content="Your Business Website. Made Simple.">
+    <meta property="og:description" content="WebSnabb creates and manages professional websites for local businesses on a simple, affordable subscription.">
+    <meta property="og:image" content="https://placehold.co/1200x630/f9fafb/111827?text=LocalWeb.">
+    <meta property="og:url" content="https://websnabb.github.io">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -48,50 +60,55 @@
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 pb-32 md:pb-0">
 
     <!-- Navigation Bar -->
     <header id="navbar" class="w-full">
         <nav class="container mx-auto px-4 md:px-8">
             <!-- Mobile Navigation -->
-            <div class="md:hidden flex items-center justify-around py-4 bg-gray-50 rounded-t-2xl shadow-lg border-t border-gray-200">
-                <a href="#problem" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
-                    <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Problem
+            <div class="md:hidden flex flex-col items-center justify-center py-4 bg-gray-50 rounded-t-2xl shadow-lg border-t border-gray-200">
+                <a href="https://websnabb.github.io" class="text-2xl font-bold mb-4">
+                    Web<span class="text-orange-500">S</span>nabb.
                 </a>
-                <a href="#solution" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
-                    <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Solution
-                </a>
-                <a href="#pricing" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
-                    <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9.5a2.5 2.5 0 00-2.5-2.5h-5A2.5 2.5 0 007 9.5v5a2.5 2.5 0 002.5 2.5h5a2.5 2.5 0 002.5-2.5v-5z" />
-                    </svg>
-                    Pricing
-                </a>
-                <a href="#contact" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
-                    <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Contact
-                </a>
+                <div class="flex items-center justify-around w-full">
+                    <a href="#problem" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        The Challenge
+                    </a>
+                    <a href="#solution" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Our Solution
+                    </a>
+                    <a href="#pricing" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9.5a2.5 2.5 0 00-2.5-2.5h-5A2.5 2.5 0 007 9.5v5a2.5 2.5 0 002.5 2.5h5a2.5 2.5 0 002.5-2.5v-5z" />
+                        </svg>
+                        Pricing
+                    </a>
+                    <a href="#contact" class="flex flex-col items-center text-xs font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <svg class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Contact
+                    </a>
+                </div>
             </div>
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center justify-between py-6">
-                <a href="#" class="text-2xl font-bold">
-                    Local<span class="text-orange-500">Web.</span>
+                <a href="https://websnabb.github.io" class="text-2xl font-bold">
+                    Web<span class="text-orange-500">S</span>nabb.
                 </a>
                 <div class="flex items-center space-x-4">
-                    <a href="#problem" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Problem</a>
-                    <a href="#solution" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Solution</a>
+                    <a href="#problem" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">The Challenge</a>
+                    <a href="#solution" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Our Solution</a>
                     <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Pricing</a>
                     <a href="#contact" class="px-4 py-2 text-sm font-semibold rounded-full bg-orange-500 text-white shadow-md hover:bg-orange-600 transition duration-300">
-                        Get Started
+                        Contact Us
                     </a>
                 </div>
             </div>
@@ -105,7 +122,7 @@
                 <!-- Left Column: Text Content and Buttons -->
                 <div class="text-center md:text-left">
                     <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-                        Your Business. Your Website. <span class="text-orange-600">Made Simple.</span>
+                        Your Business Website. <span class="text-orange-600">Made Simple.</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-600 mb-8">
                         We create and manage professional websites for local businesses on a simple, affordable subscription.
@@ -121,7 +138,7 @@
                 </div>
                 <!-- Right Column: Image -->
                 <div class="flex justify-center md:justify-end">
-                    <img src="https://placehold.co/600x400/f9fafb/111827?text=Happy+Business+Owner" alt="A happy business owner smiling while looking at their new website on a laptop." class="rounded-2xl shadow-2xl max-w-full h-auto">
+                    <img src="images/hero_img.png" alt="A happy business owner smiling while showing their new website on a laptop." class="rounded-2xl shadow-2xl max-w-full h-auto">
                 </div>
             </div>
         </section>
@@ -130,7 +147,7 @@
         <section id="problem" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The Outdated Website Trap</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Outdated Website Trap</h2>
                     <ul class="text-left text-lg text-gray-600 leading-relaxed space-y-4">
                         <li class="flex items-start space-x-3">
                             <svg class="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -153,7 +170,7 @@
                     </ul>
                 </div>
                 <div class="flex justify-center md:justify-end">
-                    <img src="https://placehold.co/500x350/f9fafb/111827?text=Confused+Business+Owner" alt="A small business owner looking confused at a computer screen." class="rounded-2xl shadow-xl max-w-full h-auto">
+                    <img src="images/problem_img.png" alt="A salon owner looking unsatisfied with their website." class="rounded-2xl shadow-xl max-w-full h-auto">
                 </div>
             </div>
         </section>
@@ -451,17 +468,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Carousel Controls -->
-                    <button onclick="changeTestimonial(-1)" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300">
-                        <svg class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                    <button onclick="changeTestimonial(1)" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300">
-                        <svg class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
                 </div>
             </div>
         </section>
@@ -570,7 +576,7 @@
                 <p class="text-lg md:text-xl text-gray-600 mb-8">
                     Let's build your online presence today.
                 </p>
-                <a href="mailto:info@localweb.com" class="px-8 py-4 w-full md:w-auto text-lg font-bold rounded-full bg-gray-900 text-white shadow-xl hover:bg-gray-800 transition duration-300 transform hover:scale-105">
+                <a href="mailto:websnabb@gmail.com" class="px-8 py-4 w-full md:w-auto text-lg font-bold rounded-full bg-gray-900 text-white shadow-xl hover:bg-gray-800 transition duration-300 transform hover:scale-105">
                     Contact Us
                 </a>
             </div>
@@ -592,14 +598,30 @@
     <!-- JavaScript for Functionality -->
     <script>
         // Testimonial Carousel
+        const testimonialCarousel = document.getElementById('testimonial-carousel');
         const testimonialContainer = document.getElementById('testimonial-container');
         let currentTestimonial = 0;
+        let testimonialInterval;
 
         function changeTestimonial(direction) {
             const testimonials = testimonialContainer.children;
-            currentTestimonial = (currentTestimonial + direction + testimonials.length) % testimonials.length;
+            const newIndex = (currentTestimonial + direction + testimonials.length) % testimonials.length;
+            currentTestimonial = newIndex;
             testimonialContainer.style.transform = `translateX(-${currentTestimonial * 100}%)`;
         }
+
+        function startAutoScroll() {
+            testimonialInterval = setInterval(() => {
+                changeTestimonial(1);
+            }, 5000); // Change testimonial every 5 seconds
+        }
+
+        function stopAutoScroll() {
+            clearInterval(testimonialInterval);
+        }
+
+        // Start the carousel when the page loads
+        document.addEventListener('DOMContentLoaded', startAutoScroll);
 
         // FAQs Accordion
         function toggleAccordion(id) {
