@@ -58,6 +58,35 @@
                 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             }
         }
+        /* Pricing Toggle */
+        .toggle-switch {
+            width: 60px;
+            height: 32px;
+            background-color: #f59e0b; /* amber-500 */
+            border-radius: 9999px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-switch.off {
+            background-color: #d1d5db; /* gray-300 */
+        }
+
+        .toggle-switch-circle {
+            width: 28px;
+            height: 28px;
+            background-color: white;
+            border-radius: 9999px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .toggle-switch.on .toggle-switch-circle {
+            transform: translateX(28px);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 pb-32 md:pb-0">
@@ -122,10 +151,10 @@
                 <!-- Left Column: Text Content and Buttons -->
                 <div class="text-center md:text-left">
                     <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-                        Your Business Website. <span class="text-amber-600">Made Simple.</span>
+                        Have a Website. <span class="text-amber-600">Free for the first month.</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-600 mb-8">
-                        We create and manage professional websites for local businesses on a simple, affordable subscription.
+                        With our affordable subscription, we made website development simple for local businesses in Europe.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
                         <a href="#pricing" class="px-8 py-3 w-full sm:w-auto text-lg font-semibold rounded-full bg-amber-500 text-white shadow-lg hover:bg-amber-600 transition duration-300 transform hover:scale-105">
@@ -146,6 +175,9 @@
         <!-- Problem Section -->
         <section id="problem" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center md:justify-end">
+                    <img src="images/problem_img.png" alt="A salon owner looking unsatisfied with their website." class="rounded-2xl shadow-xl max-w-full h-auto">
+                </div>
                 <div class="text-center md:text-left">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Outdated Website Trap</h2>
                     <ul class="text-left text-lg text-gray-600 leading-relaxed space-y-4">
@@ -169,23 +201,20 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex justify-center md:justify-end">
-                    <img src="images/problem_img.png" alt="A salon owner looking unsatisfied with their website." class="rounded-2xl shadow-xl max-w-full h-auto">
-                </div>
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
-                <div class="flex justify-center md:justify-start order-2 md:order-1">
-                    <img src="https://placehold.co/500x350/fef3c7/111827?text=Website+Building+Solution" alt="A team of professionals working on a website." class="rounded-2xl shadow-xl max-w-full h-auto">
-                </div>
-                <div class="text-center md:text-left order-1 md:order-2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">About WebSnabb: Your Partner in Digital Success</h2>
+                <div class="text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Web<span class="text-amber-500">S</span>nabb: Your Partner in Digital Success</h2>
                     <p class="text-left text-lg text-gray-600 leading-relaxed space-y-4">
-                        We founded WebSnabb with a single mission: to provide local businesses with the professional online presence they need to thrive. We understand the challenges of running a business, so we've eliminated the hassle and high costs of traditional web design and development. Our subscription model gives you a stunning, high-performance website backed by continuous support and maintenance. Think of us as your in-house web team, without the in-house price tag. We handle the tech so you can focus on what you do best.
+                        We founded WebSnabb with a single mission: to provide local businesses with the professional online presence they need to thrive. We understand the challenges of running a business, so we've eliminated the hassle and high costs of traditional web design and development.<br/><br/> Our subscription model gives you a stunning, high-performance website backed by continuous support and maintenance. Think of us as your in-house web team, without the in-house price tag. We handle the tech so you can focus on what you do best.
                     </p>
+                </div>
+                <div class="flex justify-center md:justify-start order-1 md:order-2">
+                    <img src="https://placehold.co/500x350/fef3c7/111827?text=Website+Building+Solution" alt="A team of professionals working on a website." class="rounded-2xl shadow-xl max-w-full h-auto">
                 </div>
             </div>
         </section>
@@ -240,6 +269,9 @@
         <!-- How It Works Section -->
         <section id="how-it-works" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center md:justify-end order-2 md:order-1">
+                    <img src="images/how-to_img.png" alt="A team working together to build a website, symbolizing collaboration and ease." class="rounded-2xl shadow-xl max-w-full h-auto">
+                </div>
                 <div class="text-center md:text-left order-2 md:order-1">
                     <h2 class="text-3xl md:text-4xl font-bold mb-8">How It Works</h2>
                     <ol class="space-y-4 text-left max-w-md mx-auto md:mx-0">
@@ -266,9 +298,6 @@
                         </li>
                     </ol>
                 </div>
-                <div class="flex justify-center md:justify-end order-1 md:order-2">
-                    <img src="images/how-to_img.png" alt="A team working together to build a website, symbolizing collaboration and ease." class="rounded-2xl shadow-xl max-w-full h-auto">
-                </div>
             </div>
         </section>
 
@@ -276,42 +305,48 @@
         <section id="pricing" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4 md:px-8 text-center max-w-4xl">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Pricing</h2>
-                <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                     Choose the plan that best fits your business needs. No hidden fees, just simple pricing.
                 </p>
+
+                <!-- Pricing Toggle -->
+                <div class="flex items-center justify-center space-x-4 mb-12">
+                    <span class="font-semibold text-gray-700">Monthly</span>
+                    <div id="pricing-toggle" class="toggle-switch off">
+                        <div class="toggle-switch-circle"></div>
+                    </div>
+                    <span class="font-semibold text-gray-700">Yearly <span class="text-amber-500 text-sm">(15% off)</span></span>
+                </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Basic Tier -->
                     <div class="p-8 rounded-2xl shadow-lg border-2 border-gray-200 bg-gray-50 hover:border-amber-500 transition-colors duration-300">
                         <h3 class="text-2xl font-bold mb-2">Basic</h3>
-                        <p class="text-sm uppercase font-semibold text-amber-600 mb-4">Perfect for startups</p>
-                        <p class="text-4xl font-extrabold mb-6">$17.99<span class="text-base font-medium text-gray-500">/mo</span></p>
+                        <p class="text-sm uppercase font-semibold text-gray-900 mb-4">Perfect for startups</p>
+                        <p class="text-4xl font-extrabold mb-6">
+                            $<span id="basic-price">17.99</span><span class="text-base font-medium text-gray-500" id="basic-period">/mo</span>
+                        </p>
                         <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-amber-500 text-white hover:bg-amber-600 transition duration-300">
                             Choose Plan
                         </a>
                         <ul class="mt-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Single-page website</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Monthly content updates</span>
+                                <span>Basic contact form</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Website Hosting</span>
-                            </li>
-                            <li class="flex items-center space-x-3 text-gray-400">
-                                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                                <span>Contact Form</span>
+                                <span>Hosted on GitHub Pages</span>
                             </li>
                             <li class="flex items-center space-x-3 text-gray-400">
                                 <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -319,38 +354,46 @@
                                 </svg>
                                 <span>Analytics</span>
                             </li>
+                            <li class="flex items-center space-x-3 text-gray-400">
+                                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Monthly content updates</span>
+                            </li>
                         </ul>
                     </div>
                     <!-- Pro Tier -->
                     <div class="relative p-8 rounded-2xl shadow-lg border-2 border-amber-500 bg-gray-50 transform scale-105">
                         <span class="absolute top-0 right-0 -mt-3 -mr-3 px-3 py-1 text-xs font-bold rounded-full bg-amber-500 text-white">Popular</span>
                         <h3 class="text-2xl font-bold mb-2">Pro</h3>
-                        <p class="text-sm uppercase font-semibold text-amber-600 mb-4">Our most popular plan</p>
-                        <p class="text-4xl font-extrabold mb-6">$34.99<span class="text-base font-medium text-gray-500">/mo</span></p>
+                        <p class="text-sm uppercase font-semibold text-gray-900 mb-4">Our most popular plan</p>
+                        <p class="text-4xl font-extrabold mb-6">
+                            $<span id="pro-price">34.99</span><span class="text-base font-medium text-gray-500" id="pro-period">/mo</span>
+                        </p>
                         <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-amber-500 text-white hover:bg-amber-600 transition duration-300">
                             Choose Plan
                         </a>
                         <ul class="mt-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Multi-page website (up to 5 pages)</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Contact Form</span>
+                                <span>Advanced forms & analytics</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Website Hosting</span>
+                                <span>Hosted on GitHub Pages</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Quarterly content updates</span>
@@ -359,48 +402,50 @@
                                 <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Analytics</span>
+                                <span>E-commerce integration</span>
                             </li>
                         </ul>
                     </div>
                     <!-- Enterprise Tier -->
                     <div class="p-8 rounded-2xl shadow-lg border-2 border-gray-200 bg-gray-50 hover:border-amber-500 transition-colors duration-300">
                         <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
-                        <p class="text-sm uppercase font-semibold text-amber-600 mb-4">For growing businesses</p>
-                        <p class="text-4xl font-extrabold mb-6">$59.99<span class="text-base font-medium text-gray-500">/mo</span></p>
+                        <p class="text-sm uppercase font-semibold text-gray-900 mb-4">For growing businesses</p>
+                        <p class="text-4xl font-extrabold mb-6">
+                            $<span id="enterprise-price">59.99</span><span class="text-base font-medium text-gray-500" id="enterprise-period">/mo</span>
+                        </p>
                         <a href="#contact" class="block w-full text-center px-4 py-3 font-semibold rounded-full bg-amber-500 text-white hover:bg-amber-600 transition duration-300">
                             Choose Plan
                         </a>
                         <ul class="mt-8 space-y-4 text-left">
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Unlimited pages</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Contact Form</span>
+                                <span>Advanced forms & analytics</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Website Hosting</span>
+                                <span>Hosted on GitHub Pages</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
                                 <span>Bi-monthly content updates</span>
                             </li>
                             <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                                 </svg>
-                                <span>Analytics</span>
+                                <span>E-commerce integration</span>
                             </li>
                         </ul>
                     </div>
@@ -640,6 +685,52 @@
                     navbar.classList.remove('nav-scrolled');
                 }
             }
+        });
+
+        // Pricing Toggle
+        const pricingToggle = document.getElementById('pricing-toggle');
+        const basicPriceEl = document.getElementById('basic-price');
+        const proPriceEl = document.getElementById('pro-price');
+        const enterprisePriceEl = document.getElementById('enterprise-price');
+        const basicPeriodEl = document.getElementById('basic-period');
+        const proPeriodEl = document.getElementById('pro-period');
+        const enterprisePeriodEl = document.getElementById('enterprise-period');
+
+        const monthlyPrices = {
+            basic: 17.99,
+            pro: 34.99,
+            enterprise: 59.99
+        };
+
+        const yearlyPrices = {
+            basic: (17.99 * 12 * 0.85).toFixed(2),
+            pro: (34.99 * 12 * 0.85).toFixed(2),
+            enterprise: (59.99 * 12 * 0.85).toFixed(2)
+        };
+
+        function updatePricing() {
+            const isYearly = pricingToggle.classList.contains('on');
+            if (isYearly) {
+                basicPriceEl.textContent = yearlyPrices.basic;
+                proPriceEl.textContent = yearlyPrices.pro;
+                enterprisePriceEl.textContent = yearlyPrices.enterprise;
+                basicPeriodEl.textContent = '/yr';
+                proPeriodEl.textContent = '/yr';
+                enterprisePeriodEl.textContent = '/yr';
+            } else {
+                basicPriceEl.textContent = monthlyPrices.basic;
+                proPriceEl.textContent = monthlyPrices.pro;
+                enterprisePriceEl.textContent = monthlyPrices.enterprise;
+                basicPeriodEl.textContent = '/mo';
+                proPeriodEl.textContent = '/mo';
+                enterprisePeriodEl.textContent = '/mo';
+            }
+        }
+
+        pricingToggle.addEventListener('click', () => {
+            pricingToggle.classList.toggle('on');
+            pricingToggle.classList.toggle('off');
+            updatePricing();
         });
     </script>
 </body>
