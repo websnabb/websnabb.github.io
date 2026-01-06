@@ -706,8 +706,8 @@
 
         // FAQs Accordion
         function toggleAccordion(id) {
-            const content = document.getElementById(`€{id}-content`);
-            const icon = document.getElementById(`€{id}-icon`);
+            const content = document.getElementById(id + "-content");
+            const icon = document.getElementById(id + "-icon");
             content.classList.toggle('open');
             icon.classList.toggle('rotate-180');
         }
