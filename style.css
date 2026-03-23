@@ -1,12 +1,12 @@
 :root {
   --amber: #d97706;
   --amber-dim: #b45309;
-  --amber-glow: rgba(245, 158, 11, 0.12);
-  --black: #080808;
-  --surface: #111111;
-  --border: rgba(245, 158, 11, 0.2);
-  --text: #e8e0d0;
-  --muted: #6b6560;
+  --amber-glow: rgba(217, 119, 6, 0.1);
+  --black: #f7f5f2;
+  --surface: #edeae5;
+  --border: rgba(217, 119, 6, 0.3);
+  --text: #111111;
+  --muted: #7a746e;
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'Syne', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -105,7 +105,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(8, 8, 8, 0.85);
+  background: rgba(247, 245, 242, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
@@ -164,8 +164,8 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background-image:
-  linear-gradient(rgba(245, 158, 11, 0.06) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(245, 158, 11, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(217, 119, 6, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 119, 6, 0.08) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: gridShift 22s linear infinite;
 }
@@ -174,7 +174,7 @@ nav.scrolled {
   0% {
     background-position: 0 0;
   }
-  
+
   100% {
     background-position: 60px 60px;
   }
@@ -184,20 +184,20 @@ nav.scrolled {
   position: absolute;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.1) 0%, transparent 70%);
   top: -200px;
   right: -200px;
   animation: glowPulse 6s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-  
+
   0%,
   100% {
     opacity: 0.6;
     transform: scale(1);
   }
-  
+
   50% {
     opacity: 1;
     transform: scale(1.1);
@@ -295,13 +295,13 @@ nav.scrolled {
 }
 
 @keyframes lineBreath {
-  
+
   0%,
   100% {
     transform: scaleY(1);
     opacity: 1;
   }
-  
+
   50% {
     transform: scaleY(0.4);
     opacity: 0.4;
@@ -399,7 +399,7 @@ nav.scrolled {
   0% {
     transform: translateX(0);
   }
-  
+
   100% {
     transform: translateX(-50%);
   }
@@ -627,7 +627,7 @@ nav.scrolled {
   transform: translateX(-50%);
   width: 900px;
   height: 900px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.06) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.07) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -807,14 +807,14 @@ footer {
 
 /* KOFI PULSE */
 @keyframes kofiPulse {
-  
+
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+    box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.4);
   }
-  
+
   50% {
-    box-shadow: 0 0 0 12px rgba(245, 158, 11, 0);
+    box-shadow: 0 0 0 12px rgba(217, 119, 6, 0);
   }
 }
 
@@ -828,23 +828,23 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+
   .perks-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .tiers {
     grid-template-columns: 1fr;
   }
-  
+
   .hero-headline {
     font-size: clamp(3.5rem, 15vw, 6rem);
   }
-  
+
   nav {
     padding: 1rem 1.5rem;
   }
-  
+
   #hero {
     padding: 0 1.5rem 5rem;
   }
