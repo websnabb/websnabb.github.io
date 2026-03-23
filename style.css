@@ -1,5 +1,5 @@
 :root {
-  --amber: #f59e0b;
+  --amber: #d97706;
   --amber-dim: #b45309;
   --amber-glow: rgba(245, 158, 11, 0.12);
   --black: #080808;
@@ -44,7 +44,6 @@ body {
   pointer-events: none;
   z-index: 9999;
   transition: transform 0.15s ease;
-  mix-blend-mode: difference;
 }
 
 .cursor-ring {
@@ -145,7 +144,8 @@ nav.scrolled {
 }
 
 .nav-cta:hover {
-  background: #fff;
+  background: #111;
+  color: #fff;
   transform: translateY(-1px);
 }
 
